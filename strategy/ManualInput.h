@@ -9,7 +9,7 @@ class ManualInput :	public MoveStrategy
 public:
 	std::string move(Map* map);
 
-	ManualInput();
+	ManualInput(char team);
 	~ManualInput();
 private:
 	bool validateMove(std::string move);

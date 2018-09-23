@@ -8,13 +8,15 @@ class Map;
 
 class MoveStrategy
 {
+private:
+	char team;
 public:
 	virtual std::string move(Map * map) = 0;
 
-	MoveStrategy();
+	MoveStrategy(char team);
 	virtual ~MoveStrategy() = 0;
 };
 
-inline MoveStrategy::MoveStrategy() {}
+inline MoveStrategy::MoveStrategy(char team) : team(team) {}
 inline MoveStrategy::~MoveStrategy() {}
 

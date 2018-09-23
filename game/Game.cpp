@@ -43,7 +43,7 @@ void Game::run() {
 		if (++turn > 20) {
 			cout << "Game Over" << endl << endl;
 			for (auto team = teams.begin(); team != teams.end(); ++team) {
-				int point = (*team)->countBase() * 15
+				int point = (*team)->countBase() * 20
 					+ (*team)->countUnit() * 2
 					+ (*team)->getMaterial();
 				cout << (*team)->getSymbol() << point << " point" << endl;

@@ -29,5 +29,5 @@ bool ManualInput::validateMove(std::string move)
 }
 
 
-ManualInput::ManualInput() {}
+ManualInput::ManualInput(char team) : MoveStrategy(team) {}
 ManualInput::~ManualInput() {}

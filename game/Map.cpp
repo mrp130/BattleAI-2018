@@ -94,8 +94,8 @@ Map::Map(char zone[5][5])
 	Team* teamA = teams.at(0);
 	Team* teamB = teams.at(1);
 
-	teams.at(0)->setStrategy(new ManualInput());
-	teams.at(1)->setStrategy(new ManualInput());
+	teamA->setStrategy(new ManualInput(teamA->getSymbol()));
+	teamB->setStrategy(new ManualInput(teamB->getSymbol()));
 }
 
 Map::Map(Map & obj)
