@@ -4,6 +4,7 @@
 #include "Base.h"
 #include "Unit.h"
 
+#include<algorithm>
 
 void Zone::addAdjacencies(Zone * z)
 {

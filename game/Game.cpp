@@ -8,6 +8,7 @@
 #include <typeinfo>
 
 #include "../define.h"
+#include<algorithm>
 
 void Game::run() {
 	using namespace std;
@@ -46,7 +47,7 @@ void Game::run() {
 				int point = (*team)->countBase() * 20
 					+ (*team)->countUnit() * 2
 					+ (*team)->getMaterial();
-				cout << (*team)->getSymbol() << point << " point" << endl;
+				cout << (*team)->getSymbol() << ": " << point << " point" << endl;
 			}
 			break;
 		}

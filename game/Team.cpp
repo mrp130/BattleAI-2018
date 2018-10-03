@@ -3,6 +3,9 @@
 #include <iostream>
 #include <typeinfo>
 
+#include<algorithm>
+
+
 std::string Team::move(Map * map)
 {
 	std::cout << "Team " << getSymbol() << " moving ..." << std::endl;
