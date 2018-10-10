@@ -8,7 +8,7 @@ class Map;
 
 class MoveStrategy
 {
-private:
+protected:
 	char team;
 public:
 	virtual std::string move(Map * map) = 0;
