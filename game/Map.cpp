@@ -62,6 +62,8 @@ bool Map::isInBorder(Coor c)
 }
 
 void Map::initMap(char zone[5][5]) {
+	getOrCreateTeam('A');
+	getOrCreateTeam('B');
 	for (int x = 0; x < 5; x++) {
 		for (int y = 0; y < 5; y++) {
 			Zone* z = new Zone();
